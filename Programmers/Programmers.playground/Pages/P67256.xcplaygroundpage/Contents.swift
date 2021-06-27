@@ -1,6 +1,3 @@
-import Foundation
-
-class P67256 {
     func solution(_ numbers:[Int], _ hand:String) -> String {
         var leftPosition = (3, 0)
         var rightPosition = (3, 2)
@@ -124,4 +121,3 @@ class P67256 {
             }
         }
     }
-}
