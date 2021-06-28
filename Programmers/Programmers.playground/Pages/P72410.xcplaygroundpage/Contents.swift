@@ -42,7 +42,8 @@ func solution(_ new_id:String) -> String {
     
     // step 6
     if recommandID.count >= 16 {
-        recommandID = recommandID.removeSubrange([15..<recommandID.endIndex])
+        let deletedIndex = recommandID.index(recommandID.startIndex, offsetBy: 15)
+        recommandID.removeSubrange(deletedIndex...)
         
         if recommandID.last == "." {
             recommandID.removeLast()
@@ -51,13 +52,14 @@ func solution(_ new_id:String) -> String {
     
     // step 7
     if recommandID.count <= 2 {
-        recommandID.append(String(recommandID.lastfo))
+        recommandID.append(String(repeating: recommandID.last!, count: 3 - recommandID.count))
     }
     
     return recommandID
 }
 
-//assert(solution("...!@BaT#*..y.abcdefghijklm") == "bat.y.abcdefghi")
-
-
-print(solution("...!@BaT#*..y.abcdefghijklm"))
+assert(solution("...!@BaT#*..y.abcdefghijklm") == "bat.y.abcdefghi")
+assert(solution("z-+.^.") == "z--")
+assert(solution("=.=") == "aaa")
+assert(solution("123_.def") == "123_.def")
+assert(solution("abcdefghijklmn.p") == "abcdefghijklmn"래)
