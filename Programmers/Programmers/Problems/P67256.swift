@@ -1,3 +1,13 @@
+//
+//  P67256.swift
+//  Programmers
+//
+//  Created by 최호주 on 2021/07/05.
+//
+
+import Foundation
+
+class P67256 {
     func solution(_ numbers:[Int], _ hand:String) -> String {
         var leftPosition = (3, 0)
         var rightPosition = (3, 2)
@@ -121,3 +131,5 @@
             }
         }
     }
+    
+}

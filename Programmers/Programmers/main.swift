@@ -7,7 +7,9 @@
 
 import Foundation
 
-while(true) {
-    let input = readLine() ?? ""
-    print(P60057().solution(input))
-}
+//while(true) {
+//    let input = readLine() ?? ""
+//    print(P60057().solution(input))
+//}
+
+//P77484().asserting()
