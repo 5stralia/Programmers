@@ -8,8 +8,7 @@
 import Foundation
 
 while(true) {
-    let str1 = readLine() ?? ""
-    let str2 = readLine() ?? ""
+    let input = readLine() ?? ""
     
-    print(P17677().solution(str1, str2))
+    print(P67257().solution(input))
 }
