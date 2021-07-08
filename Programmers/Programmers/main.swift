@@ -7,8 +7,5 @@
 
 import Foundation
 
-while(true) {
-    let input = readLine() ?? ""
-    
-    print(P67257().solution(input))
-}
+print(P72411().solution(["XYZ", "XWY", "WXA"],
+                        [2, 3, 4]))
