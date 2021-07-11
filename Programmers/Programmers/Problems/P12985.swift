@@ -33,4 +33,4 @@ class P12985 {
         return (n + 1) / 2
     }
 }
-f
+
