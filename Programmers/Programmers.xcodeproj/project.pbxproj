@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FB2D972D26A06A0B0027FE06 /* P12981.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2D972C26A06A0B0027FE06 /* P12981.swift */; };
 		FB5717E42691FF65005A448A /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5717E32691FF65005A448A /* main.swift */; };
 		FB5717ED2692033E005A448A /* P60057.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5717EC2692033E005A448A /* P60057.swift */; };
 		FB5717EF26920408005A448A /* P64061.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5717EE26920408005A448A /* P64061.swift */; };
@@ -47,6 +48,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		FB2D972C26A06A0B0027FE06 /* P12981.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = P12981.swift; sourceTree = "<group>"; };
 		FB5717E02691FF65005A448A /* Programmers */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Programmers; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB5717E32691FF65005A448A /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		FB5717EC2692033E005A448A /* P60057.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = P60057.swift; sourceTree = "<group>"; };
@@ -138,6 +140,7 @@
 				FB571816269AD563005A448A /* P81302.swift */,
 				FBA8E50A269C860C00D3F973 /* P42888.swift */,
 				FBA8E50C269DE26100D3F973 /* P76502.swift */,
+				FB2D972C26A06A0B0027FE06 /* P12981.swift */,
 			);
 			path = Problems;
 			sourceTree = "<group>";
@@ -227,6 +230,7 @@
 				FB57180D26920EFF005A448A /* P17677.swift in Sources */,
 				FB5717F9269204CC005A448A /* Int+isPrime.swift in Sources */,
 				FB57180F26949330005A448A /* P62048.swift in Sources */,
+				FB2D972D26A06A0B0027FE06 /* P12981.swift in Sources */,
 				FB5718132697412D005A448A /* P72411.swift in Sources */,
 				FB57180926920648005A448A /* P12973.swift in Sources */,
 				FB571817269AD563005A448A /* P81302.swift in Sources */,
