@@ -11,6 +11,7 @@
 		FB2D972F26A1BA880027FE06 /* Array+Combination.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2D972E26A1BA880027FE06 /* Array+Combination.swift */; };
 		FB2D973326A1C7260027FE06 /* P42890.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2D973226A1C7260027FE06 /* P42890.swift */; };
 		FB2D973526A3C6400027FE06 /* P42583.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2D973426A3C6400027FE06 /* P42583.swift */; };
+		FB2D973726A59A470027FE06 /* P12978.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2D973626A59A470027FE06 /* P12978.swift */; };
 		FB5717E42691FF65005A448A /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5717E32691FF65005A448A /* main.swift */; };
 		FB5717ED2692033E005A448A /* P60057.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5717EC2692033E005A448A /* P60057.swift */; };
 		FB5717EF26920408005A448A /* P64061.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5717EE26920408005A448A /* P64061.swift */; };
@@ -55,6 +56,7 @@
 		FB2D972E26A1BA880027FE06 /* Array+Combination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Combination.swift"; sourceTree = "<group>"; };
 		FB2D973226A1C7260027FE06 /* P42890.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = P42890.swift; sourceTree = "<group>"; };
 		FB2D973426A3C6400027FE06 /* P42583.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = P42583.swift; sourceTree = "<group>"; };
+		FB2D973626A59A470027FE06 /* P12978.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = P12978.swift; sourceTree = "<group>"; };
 		FB5717E02691FF65005A448A /* Programmers */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Programmers; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB5717E32691FF65005A448A /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		FB5717EC2692033E005A448A /* P60057.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = P60057.swift; sourceTree = "<group>"; };
@@ -149,6 +151,7 @@
 				FB2D972C26A06A0B0027FE06 /* P12981.swift */,
 				FB2D973226A1C7260027FE06 /* P42890.swift */,
 				FB2D973426A3C6400027FE06 /* P42583.swift */,
+				FB2D973626A59A470027FE06 /* P12978.swift */,
 			);
 			path = Problems;
 			sourceTree = "<group>";
@@ -221,6 +224,7 @@
 			files = (
 				FB5717E42691FF65005A448A /* main.swift in Sources */,
 				FB5717F326920480005A448A /* P67256.swift in Sources */,
+				FB2D973726A59A470027FE06 /* P12978.swift in Sources */,
 				FB5717EF26920408005A448A /* P64061.swift in Sources */,
 				FB57180B26920C9F005A448A /* P64065.swift in Sources */,
 				FB571803269205E5005A448A /* P68935.swift in Sources */,
