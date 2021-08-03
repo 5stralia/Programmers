@@ -6,5 +6,3 @@
 //
 
 import Foundation
-
-print(P64065().solution(""))
