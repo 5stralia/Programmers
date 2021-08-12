@@ -7,9 +7,4 @@
 
 import Foundation
 
-while true {
-    if let input = readLine(),
-       let i = Int(input) {
-        print(P12980().solution(i))
-    }
-}
+print(P17687().solution(16, 16, 2, 2))
