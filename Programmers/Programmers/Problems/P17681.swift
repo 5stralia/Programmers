@@ -32,4 +32,16 @@ class P17681 {
             $0.reduce("", +)
         }
     }
+    
+    // 비트 연산자 사용
+    func solution2(_ n:Int, _ arr1:[Int], _ arr2:[Int]) -> [String] {
+        return (0..<n)
+        .map { arr1[$0] | arr2[$0] }
+        .map {
+            String($0, radix: 2)
+            .replacingOccurrences(of: "1", with: "#")
+            .replacingOccurrences(of: "0", with: " ")
+        }
+        .map { String(repeating: " ", count: n - $0.count) + $0 }
+    }
 }
