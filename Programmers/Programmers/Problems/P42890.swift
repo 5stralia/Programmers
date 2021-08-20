@@ -2,56 +2,43 @@
 //  P42890.swift
 //  Programmers
 //
-//  Created by 최호주 on 2021/07/16.
+//  Created by 최호주 on 2021/08/20.
 //
 
 import Foundation
 
 class P42890 {
     func solution(_ relation:[[String]]) -> Int {
-        var candidateKeys: [Set<Int>] = []
-        var comb: [[Int]] = [[]]
-
-        for i in (1...relation.first!.count) {
-            comb += (0..<relation.first!.count).map({$0}).combination(i)
+        var candidates: [Set<Int>] = []
+        
+        let keyCount = relation.first!.count
+        
+        var keys: [[Int]] = []
+        for i in (1...keyCount) {
+            keys += Array(0..<keyCount).combination(i)
         }
         
-        for c in comb {
-            if isCandidateKey(c, relation) {
-                candidateKeys.append(Set(c))
+        // 유일성
+        for key in keys {
+            let values = relation.map { tuple in
+                tuple.enumerated().filter { key.contains($0.offset) }.map { $0.element }
             }
-        }
-        
-        candidateKeys = candidateKeys.filter {isCandidateKey($0, candidateKeys)}
-        
-        let maxLength = candidateKeys.reduce(0, { $0 < $1.count ? $1.count : $0 })
-        return maxLength
-    }
-
-    func isCandidateKey(_ c: [Int], _ relation: [[String]]) -> Bool {
-        var candidates = Set<[String]>()
             
-            for r in relation {
-                let tuple = c.map({r[$0]})
-                
-                if candidates.contains(tuple) {
-                    return false
-                }
-                
-                candidates.insert(tuple)
-            }
-        
-        return true
-    }
-
-    func isCandidateKey(_ c: Set<Int>, _ keys: [Set<Int>]) -> Bool {
-        let subKeys = keys.filter { $0.count < c.count }
-        for k in subKeys {
-            if k.isSubset(of: c) {
-                return false
+            if Set(values).count == relation.count {
+                candidates.append(Set(key))
             }
         }
         
-        return true
+        // 최소성
+        var answer: [Set<Int>] = []
+        
+        while !candidates.isEmpty {
+            let key = candidates.removeLast()
+            if candidates.filter({ key.isSuperset(of: $0)}).isEmpty {
+                answer.append(key)
+            }
+        }
+        
+        return answer.count
     }
 }
