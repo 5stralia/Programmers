@@ -11,7 +11,6 @@ func assertValue<T: Equatable>(_ value1: T, _ value2: T, message: String = "Fail
     assert(value1 == value2, message)
 }
 
-let problem = P86051()
-
-assertValue(problem.solution([1,2,3,4,6,7,8,0]), 14)
-assertValue(problem.solution([5,8,4,0,6,7,9]), 6)
+let problem = P87389()
+assertValue(problem.solution(10), 3)
+assertValue(problem.solution(12), 11)
